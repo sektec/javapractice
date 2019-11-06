@@ -10,11 +10,11 @@ public class GGEZ{
         11.) Middle of three - enter three numbers with space in between
         */
         System.out.println("Enter two numbers with a space in between");
-        String num = input.nextLine();
-        five(num);
+        int num = input.nextInt();
+        eight(num);
     }
-    public static void five(String num){
-        String num2[] = num.split(" ");
-        System.out.println(num2[1] + " " + num2[0]);
+    public static void eight(int num){
+        if(num < 0 || num > 10000000)System.exit(420);
+
     }
 }
